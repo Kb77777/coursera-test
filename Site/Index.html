@@ -2,11 +2,34 @@
 <html>
 
 <head>
-    <title>Hello Coursera!!!!</title>
+    <title>Hello Coursera!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <script> 
+        $(document).ready(function()
+        {
+           $('#div1').hover(function()
+           {
+           var div = $("#div1");
+           div.animate({right: "300px", fontSize: "3rem"}, "slow" );
+           div.animate({left: "500px", fontSize: "1rem"}, "slow");
+           
+            
+          });
+        });
+        </script> 
+
 </head>
-<body>
-    <h1>
-        Hello Coursera! It's a great course1
+    <body>
+    <h1 style="position: center;text-align: center; color: green;">
+        <!--<div style="color: blue;"></div>-->
+        Hello Coursera! It's a great course!
+        
     </h1>
+
+    <div style="height:100px;width:100px; background-color: gray; position: absolute;" id="div1" >
+        <p  id="p1" style="color: lightgreen;">What is this?</p><!---->
+    </div>
 </body>
 </html>
